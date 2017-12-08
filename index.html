@@ -21,6 +21,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/navbar.css">
     <script src="js/navbar.js"></script>
+    <script type="text/javascript">;
+    !function(name,path,ctx){
+        var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
+    }('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.2.1.min.js',this);
+
+    KeenAsync.ready(function(){
+        // Configure a client instance
+        // This is your actual Project ID and Write Key
+        var client = new KeenAsync({
+            projectId: '5a29ec61c9e77c0001ab682a',
+            writeKey: '10B7677578E2C7AF1A14090195C584499719E609B1458C03E06960A45D39C7340E86EB4CBB4F5A36E8AEAB58743A044E9F22DED0BF6B0A682FB8663F50F92B92AC70D382DD568BE0BD02E48D6BCD3BF6F13B72DE79C5CEB32375E682DEC4ADD1'
+        });
+
+        // Record an event
+        client.recordEvent('pageviews', {
+            title: document.title
+        });
+    });
+    </script>
 </head>
 <body>
 <!--[if lte IE 9]>
