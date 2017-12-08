@@ -13,135 +13,522 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/resume.css">
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/navbar.js"></script>
 </head>
 <body>
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
 <![endif]-->
-<div class="header"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="profile-intro">
-                <div class="col-sm-6 col-md-4 profile-picture">
-                    <img src="./img/karthick.jpg" class="thumbnail">
-                </div>
-                <div class="col-sm-6 col-md-6  text-block bold-text">
-                    <div class="name">KARTHICK MAHALINGAM</div>
-                    <i class="glyphicon glyphicon-envelope btn-lg">
-                        <a href="mailto:itkarthick@hotmail.com"
-                           target="_blank" id="c-white">itkarthick@hotmail.com</a>
-                    </i><br/>
-                    <i class="glyphicon glyphicon-phone btn-lg">
-                        <span class="profile-detail">(510)399-9215</span>
-                    </i><br/>
-                    <i class="glyphicon glyphicon-home btn-lg">
-                        <a href="http://maps.google.com/maps?q=Fremont,California" target="_blank" id="c-white">
-                            Fremont,California</a></i><br/>
-                    <a href="https://github.com/KarthickMahalingam/" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/karthickmahalingam" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<br/><br/>
-<div class="main-section">
-    <div class="container border">
-        <div class="section-title">
-            <h2 style="text-align: center"><i class="glyphicon glyphicon-book"></i> Professional Summary </h2>
-        </div>
-        <div class="professional-summary">
-            <li>2+ years of experience on Oracle E-Biz ERP applications using Java/J2EE, OAF,
-                shell & SQL in Banking & Financial services and maintained distributed databases.
+
+<div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Karthick Mahalingam
+                </a>
             </li>
-            <li>1-year experience in web application development. Ruby on Rails, HTML, CSS,
-                jQuery, JavaScript, PostgreSQL
+            <li>
+                <a href="#">Professional Summary</a>
             </li>
-            <li>Hands-on experience with Amazon AWS, Heroku and Google App Engine</li>
-            <li>Good knowledge in data structures, algorithms and software design patterns</li>
-            <li>Developed android application using OpenCV – computer vision</li>
-            <li>Can pickup new tech stacks quickly</li>
-        </div>
+            <li>
+                <a href="#">Education</a>
+            </li>
+            <li>
+                <a href="#">Skills</a>
+            </li>
+            <li>
+                <a href="#">Work Experience</a>
+            </li>
+            <li>
+                <a href="#">Academic projects</a>
+            </li>
+            <li>
+                <a href="#">Achievements</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/karthickmahalingam">Follow me</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
     </div>
-    <br/><br/>
-    <div class="container border">
-        <div class="section-title">
-            <h2 style="text-align: center"><i class="glyphicon glyphicon-education"></i> Education </h2>
-        </div>
-        <div class="education">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    Masters, Computer Science
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    (09/2016 – 12/2017(Expected))
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    California State University, EastBay
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    GPA: 3.7
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    Bachelors, Information Technology
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    (07/2011 – 05/2014)
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    SASTRA University, India
-                </div>
-                <div class="col-md-2 col-sm-4">
-                    GPA: 3.42
+
+    <div class="header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="profile-intro float-up">
+                    <div class="col-sm-6 col-md-4 profile-picture">
+                        <img src="./img/karthick.jpg" class="thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-6  text-block bold-text">
+                        <div class="name">KARTHICK MAHALINGAM</div>
+                        <i class="glyphicon glyphicon-envelope btn-lg">
+                            <a href="mailto:itkarthick@hotmail.com"
+                               target="_blank" class="c-white">itkarthick@hotmail.com</a>
+                        </i><br/>
+                        <i class="glyphicon glyphicon-phone btn-lg">
+                            <span class="profile-detail">(510)399-9215</span>
+                        </i><br/>
+                        <i class="glyphicon glyphicon-home btn-lg">
+                            <a href="http://maps.google.com/maps?q=Fremont,California" target="_blank" class="c-white">
+                                Fremont,California</a></i><br/>
+                        <a href="https://github.com/KarthickMahalingam/" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karthickmahalingam" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <br/><br/>
-    <div class="container border">
-        <div class="section-title">
-            <h2 style="text-align: center"><i class="glyphicon glyphicon-equalizer"></i> SKILLS </h2>
-        </div>
-        <div class="skillset">
-            <div class="col-md-6 col-sm-6">
-                <li>Ruby on Rails</li>
-                <li>Java/J2EE</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>OAuth</li>
-                <li>RSpec</li>
-                <li>FactoryGirl</li>
-                <li>GitHub</li>
-                <li>Heroku</li>
-                <li>Amazon EC2</li>
-                <li>Google App Engine</li>
-                <li>Oracle Application Framework</li>
+    <div class="main-section">
+        <div class="container border">
+            <div class="section-title">
+                <h2 style="text-align: center"><i class="glyphicon glyphicon-book"></i> Professional Summary </h2>
             </div>
-            <div class="col-md-6 col-sm-6">
-                <li>PostgreSQL</li>
-                <li>Oracle SQL/PL-SQL</li>
-                <li>mySQL</li>
-                <li>Google DataStore</li>
-                <li>Amazon S3</li>
-                <li>Oracle E-Business Suite</li>
-                <li>Android App development</li>
+            <div class="professional-summary">
+                <li>2+ years of experience on Oracle E-Biz ERP applications using Java/J2EE, OAF,
+                    shell & SQL in Banking & Financial services and maintained distributed databases.
+                </li>
+                <li>1-year experience on Full stack development. Ruby on Rails, HTML, CSS,
+                    jQuery, JavaScript, PostgreSQL, Amazon S3, Heroku
+                </li>
+                <li>Hands-on experience with Amazon AWS, Heroku and Google App Engine</li>
+                <li>Good knowledge in data structures, algorithms and software design patterns</li>
+                <li>Developed android application using OpenCV – computer vision</li>
+                <li>Can pickup new tech stacks quickly</li>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="container border">
+            <div class="section-title">
+                <h2 style="text-align: center"><i class="glyphicon glyphicon-education"></i> Education </h2>
+            </div>
+            <div class="education">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <strong>Masters, Computer Science</strong>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        (09/2016 – 12/2017)
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="http://maps.google.com/maps?q=Cal state Eastbay" target="_blank">California State
+                            University, EastBay</a>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        GPA: 3.7
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <strong>Bachelors, Information Technology</strong>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        (07/2010 – 05/2014)
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="http://maps.google.com/maps?q=SASTRA University, Thanjavur" target="_blank">SASTRA
+                            University, India</a>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        GPA: 3.42
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="container border">
+            <div class="section-title">
+                <h2 style="text-align: center"><i class="glyphicon glyphicon-equalizer"></i> SKILLS </h2>
+            </div>
+            <div class="skillset col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 skill-title">FrontEnd</div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="big-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:8%">HTML
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:8%">CSS</div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                JavaScript
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">jQuery
+                            </div>
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:15%">
+                                BootStrap
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">Material
+                                UI
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:8%">AJAX
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:21%">
+                                Responsive Web Design
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">HTML
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">CSS</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
+                                JavaScript
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">jQuery
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                BootStrap
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:50%">Material
+                                UI
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">AJAX
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
+                                Responsive Web Design
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillset col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 skill-title">Backend</div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="big-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:18%">Ruby
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:9%">JSP</div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                Servlets
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">NodeJS
+                            </div>
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:15%">
+                                Shell
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">PHP
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:18%">Python
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Ruby
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">JSP</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
+                                Servlets
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:70%">nodeJS
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
+                                Shell
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">PHP
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%">Python
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skillset col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 skill-title">Database</div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="big-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:17%">Oracle
+                                SQL
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:12%">mySQL</div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                PostgreSQL
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:11%">SQLite
+                            </div>
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:20%">
+                                Google DataStore
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:11%">REDIS
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 14%">Amazon
+                                S3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Oracle
+                                SQL
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">mySQL</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
+                                PostgreSQL
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">SQLite
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
+                                Google DataStore
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">REDIS
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">Amazon
+                                S3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skillset col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 skill-title">Frameworks</div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="big-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">Ruby on
+                                Rails
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">Spring
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                AngularJS
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 10%">.NET
+                            </div>
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 15%">OpenCV
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Ruby on
+                                Rails
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">Spring
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+                                AngularJS
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">.NET
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">OpenCV
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skillset col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 skill-title">Cloud</div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="big-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">Heroku
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:40%">Amazon
+                                EC2
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:30%">
+                                Google App Engine
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Heroku
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">Amazon
+                                EC2
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+                                Google App Engine
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skillset col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 skill-title">Testing</div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="big-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">Rspec
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">
+                                FactoryGirl
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                Protractor
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 25%">JUnit
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Rspec
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">
+                                FactoryGirl
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">
+                                Protractor
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">JUnit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skillset col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 skill-title">API & Other</div>
+                <div class="col-md-10 col-sm-10">
+                    <div class="big-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:13%">
+                                OpenGraph
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:10%">LinkedIn
+                            </div>
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                Facebook
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 11%">Sidekiq
+                            </div>
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 10%">GitHub
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width: 10%">Stripe
+                            </div>
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 10%">Twilio
+                            </div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width: 21%">Oracle ERP
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-screen-only">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                OpenGraph
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">LinkedIn
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+                                Facebook
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">Sidekiq
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">GitHub
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">Stripe
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">Twilio
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">Oracle
+                                ERP
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
