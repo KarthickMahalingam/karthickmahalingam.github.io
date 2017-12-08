@@ -20,13 +20,43 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <script src="js/navbar.js"></script>
     <script type="text/javascript">;
-    !function(name,path,ctx){
-        var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
-    }('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.2.1.min.js',this);
+    !function (name, path, ctx) {
+        var latest, prev = name !== 'Keen' && window.Keen ? window.Keen : false;
+        ctx[name] = ctx[name] || {
+            ready: function (fn) {
+                var h = document.getElementsByTagName('head')[0], s = document.createElement('script'), w = window,
+                    loaded;
+                s.onload = s.onerror = s.onreadystatechange = function () {
+                    if ((s.readyState && !(/^c|loade/.test(s.readyState))) || loaded) {
+                        return
+                    }
+                    s.onload = s.onreadystatechange = null;
+                    loaded = 1;
+                    latest = w.Keen;
+                    if (prev) {
+                        w.Keen = prev
+                    } else {
+                        try {
+                            delete w.Keen
+                        } catch (e) {
+                            w.Keen = void 0
+                        }
+                    }
+                    ctx[name] = latest;
+                    ctx[name].ready(fn)
+                };
+                s.async = 1;
+                s.src = path;
+                h.parentNode.insertBefore(s, h)
+            }
+        }
+    }('KeenAsync', 'https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.2.1.min.js', this);
 
-    KeenAsync.ready(function(){
+    KeenAsync.ready(function () {
         // Configure a client instance
         // This is your actual Project ID and Write Key
         var client = new KeenAsync({
@@ -181,373 +211,617 @@
         <br/><br/>
         <div class="container border">
             <div class="section-title">
-                <h2 style="text-align: center"><i class="glyphicon glyphicon-equalizer"></i> SKILLS </h2>
+                <h2 style="text-align: center"><i class="glyphicon glyphicon-flash"></i> SUPER POWERS </h2>
             </div>
-            <div class="skillset col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-sm-2 skill-title">FrontEnd</div>
-                <div class="col-md-10 col-sm-10">
-                    <div class="big-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:8%">HTML
+            <div class="skillset col-md-12 col-sm-12">
+                <div class="sm-skillset col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 skill-title">FrontEnd</div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="big-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:8%">HTML
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:8%">CSS
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                    JavaScript
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">
+                                    jQuery
+                                </div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:15%">
+                                    BootStrap
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
+                                    Material
+                                    UI
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:8%">AJAX
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:21%">
+                                    Responsive Web Design
+                                </div>
                             </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:8%">CSS</div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-                                JavaScript
+                        </div>
+                        <div class="small-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    HTML
+                                </div>
                             </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">jQuery
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">CSS
+                                </div>
                             </div>
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:15%">
-                                BootStrap
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
+                                    JavaScript
+                                </div>
                             </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">Material
-                                UI
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
+                                    jQuery
+                                </div>
                             </div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:8%">AJAX
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    BootStrap
+                                </div>
                             </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:21%">
-                                Responsive Web Design
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:50%">
+                                    Material
+                                    UI
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">AJAX
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
+                                    Responsive Web Design
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="small-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">HTML
+                </div>
+                <div class="sm-skillset col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 skill-title">Backend</div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="big-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:18%">Ruby
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:9%">JSP
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                    Servlets
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">
+                                    NodeJS
+                                </div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:15%">
+                                    Shell
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">PHP
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:18%">
+                                    Python
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">CSS</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
-                                JavaScript
+                        <div class="small-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    Ruby
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">JSP
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
+                                    Servlets
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:70%">
+                                    nodeJS
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
+                                    Shell
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">PHP
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%">
+                                    Python
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">jQuery
+                    </div>
+                </div>
+
+                <div class="sm-skillset col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 skill-title">Database</div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="big-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:17%">
+                                    Oracle
+                                    SQL
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:12%">mySQL
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                    PostgreSQL
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:11%">
+                                    SQLite
+                                </div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:20%">
+                                    Google DataStore
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:11%">REDIS
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 14%">
+                                    Amazon
+                                    S3
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
-                                BootStrap
+                        <div class="small-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    Oracle
+                                    SQL
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">mySQL
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
+                                    PostgreSQL
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
+                                    SQLite
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
+                                    Google DataStore
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">REDIS
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">
+                                    Amazon
+                                    S3
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:50%">Material
-                                UI
+                    </div>
+                </div>
+
+
+                <div class="sm-skillset col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 skill-title">Frameworks</div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="big-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">Ruby
+                                    on
+                                    Rails
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">Spring
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                    AngularJS
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 10%">.NET
+                                </div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 15%">
+                                    OpenCV
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">AJAX
+                        <div class="small-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    Ruby on
+                                    Rails
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">Spring
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+                                    AngularJS
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">.NET
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    OpenCV
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
-                                Responsive Web Design
+                    </div>
+                </div>
+
+                <div class="sm-skillset col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 skill-title">Cloud</div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="big-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">
+                                    Heroku
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:40%">Amazon
+                                    EC2
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:30%">
+                                    Google App Engine
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    Heroku
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">Amazon
+                                    EC2
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+                                    Google App Engine
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-skillset col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 skill-title">Testing</div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="big-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">
+                                    Rspec
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">
+                                    FactoryGirl
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                    Protractor
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 25%">
+                                    JUnit
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    Rspec
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">
+                                    FactoryGirl
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">
+                                    Protractor
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
+                                    JUnit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm-skillset col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-2 col-sm-2 skill-title">API & Other</div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="big-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:13%">
+                                    OpenGraph
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:10%">
+                                    LinkedIn
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                                    Facebook
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 11%">
+                                    Sidekiq
+                                </div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 10%">
+                                    GitHub
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width: 10%">Stripe
+                                </div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 10%">
+                                    Twilio
+                                </div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width: 21%">Oracle
+                                    ERP
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-screen-only">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    OpenGraph
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">
+                                    LinkedIn
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+                                    Facebook
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
+                                    Sidekiq
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
+                                    GitHub
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">Stripe
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
+                                    Twilio
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">
+                                    Oracle
+                                    ERP
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="skillset col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-sm-2 skill-title">Backend</div>
-                <div class="col-md-10 col-sm-10">
-                    <div class="big-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:18%">Ruby
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:9%">JSP</div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-                                Servlets
-                            </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%">NodeJS
-                            </div>
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:15%">
-                                Shell
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">PHP
-                            </div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:18%">Python
-                            </div>
+        </div>
+        <br/><br/>
+        <div class="container border">
+            <div class="section-title">
+                <h2 style="text-align: center"><i class="glyphicon glyphicon-equalizer"></i> WORK EXPERIENCE </h2>
+            </div>
+            <div class="work-experience">
+                <div class="timeline">
+                    <div class="timeline-container timeline-left">
+                        <div class="timeline-content">
+                            <h3>Jun-17 to Dec-17</h3>
+                            <p><strong>Software Engineer Intern <br/>
+                                Duco Advisors Inc,San Francisco</strong><br/>
+                            <li>Design, Develop and maintain application-Ruby on Rails, PostgreSQL, Redis, Sendgrid,
+                                Heroku, HTML, jQuery
+                            </li>
+                            <li>Media articles – Designed a automated scraper service using Opengraph and configured
+                                redis backgrounder
+                            </li>
+                            <li>Research, analyze and present blocks in new technology implementation like shrine,
+                                cryptocurrency
+                            </li>
+                            <li>Added new features(Rails admin) and customized the application to ease the internal
+                                work
+                            </li>
+                            <li>Wrote (60+ to-date) Rspec test cases to analyze and identify code leaks</li>
+                            <li>Resolve 30+ website bugs that threaten data security</li>
+                            <li>Refactored the application code by applying DRY (Don't Repeat Yourself), KISS, SOLID
+                            </li>
+                            </p>
                         </div>
                     </div>
-                    <div class="small-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Ruby
-                            </div>
+
+                    <div class="timeline-container timeline-right">
+                        <div class="timeline-content">
+                            <h3>Jul-14 to Sep-16</h3>
+                            <p><strong>Application Developer Analyst<br/>
+                                Accenture, India</strong><br/>
+                            <li>Worked across the service delivery lifecycle to analyze, design, build, test, implement
+                                and maintained multiple system applications for our client (Canada based E-Commerce)
+                            </li>
+                            <li>Designed shell script components by working directly with client and saved 45
+                                hours/month of team effort.
+                            </li>
+                            <li>Debugged and fixed 20+ application bugs in distributed database and Oracle Application
+                                pages.
+                            </li>
+                            <li>Refined and exposed security threat in Oracle database application that was unnoticed
+                                10+ years.
+                            </li>
+                            <li>Coordinated various teams (15 teams and 50+members) during Database and E-Business
+                                Application upgrade.
+                            </li>
+                            </p>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">JSP</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
-                                Servlets
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:70%">nodeJS
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
-                                Shell
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">PHP
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:50%">Python
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="container border">
+            <div class="section-title">
+                <h2 style="text-align: center"><i class="glyphicon glyphicon-menu-left"></i><i
+                    class="glyphicon glyphicon-menu-right"></i> ACADEMIC PROJECT </h2>
+            </div>
+
+            <div class="project-section col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10">
+                        <h4><strong>Facebook application using J2EE and GAE, CSU EastBay</strong></h4>
+                        Designed Facebook application using OAuth(Facebook API) and added features like tweet, comment
+                        and view post. App hosted on Google App Engine.
+                    </div>
+                    <div class="col-md-2 col-sm-2 pull-down">Spring-2017</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4"><strong>Skills utilized:</strong></div>
+                    <div class="col-md-8 col-sm-8" >
+                        JSP, Servlets, Facebook API, Google App Engine, Google DataStore, JavaScript, HTML, CSS, jQuery
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <a href="https://github.com/KarthickMahalingam/Facebook-tweet" target="_blank"><i
+                            class="fi-social-github large" style="font-size: 4vh"></i></a>&nbsp;&nbsp;
+                        <a href="https://apps.facebook.com/karthick_tweet" target="_blank"><i
+                            class="fi-social-facebook large" style="font-size: 4vh"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <br/><br/><br/>
+            <div class="project-section col-md-12 col-sm-12" style="margin-top: 3%">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10">
+                        <h4><strong>Doyu card battle game using design patterns</strong></h4>
+                        Developed a card battle game following principles of Software design patterns and development lifecycle.
+                    </div>
+                    <div class="col-md-2 col-sm-2 pull-down">Winter-2017</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4"><strong>Patterns utilized:</strong></div>
+                    <div class="col-md-8 col-sm-8" >
+                        Java, Command, Proxy, Factory
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <a href="https://github.com/KarthickMahalingam/DoyuThrowdown" target="_blank"><i
+                            class="fi-social-github large" style="font-size: 4vh"></i></a>&nbsp;&nbsp;
                     </div>
                 </div>
             </div>
 
-            <div class="skillset col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-sm-2 skill-title">Database</div>
-                <div class="col-md-10 col-sm-10">
-                    <div class="big-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:17%">Oracle
-                                SQL
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:12%">mySQL</div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-                                PostgreSQL
-                            </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:11%">SQLite
-                            </div>
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:20%">
-                                Google DataStore
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:11%">REDIS
-                            </div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 14%">Amazon
-                                S3
-                            </div>
-                        </div>
+            <div class="project-section col-md-12 col-sm-12" style="margin-top: 3%">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10">
+                        <h4><strong>US currency recoginition using OpenCV</strong></h4>
+                        Developed an Android application using OpenCV framework to recognize US
+                        currency denominations output result through audio support to assist vision impaired.
                     </div>
-                    <div class="small-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Oracle
-                                SQL
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">mySQL</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">
-                                PostgreSQL
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">SQLite
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
-                                Google DataStore
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">REDIS
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">Amazon
-                                S3
-                            </div>
-                        </div>
+                    <div class="col-md-2 col-sm-2 pull-down">Spring-2017</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4"><strong>Skills utilized:</strong></div>
+                    <div class="col-md-8 col-sm-8" >
+                        Java, OpenCV, Android Studio
+                    </div>
+                    <div class="col-md-2 col-sm-2">
+                        <a href="https://github.com/KarthickMahalingam/CurrencyReader" target="_blank"><i
+                            class="fi-social-github large" style="font-size: 4vh"></i></a>&nbsp;&nbsp;
                     </div>
                 </div>
             </div>
 
-
-            <div class="skillset col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-sm-2 skill-title">Frameworks</div>
-                <div class="col-md-10 col-sm-10">
-                    <div class="big-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">Ruby on
-                                Rails
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">Spring
-                            </div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-                                AngularJS
-                            </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 10%">.NET
-                            </div>
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 15%">OpenCV
-                            </div>
-                        </div>
+            <div class="project-section col-md-12 col-sm-12" style="margin-top: 3%">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10">
+                        <h4><strong>Customized a compiler with custom grammar</strong></h4>
+                        Implemented a compiler to perform lexical and syntax analysis on a custom programming language using Jflex and cup parser </div>
+                    <div class="col-md-2 col-sm-2 pull-down">Fall-2016</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4"><strong>Skills utilized:</strong></div>
+                    <div class="col-md-8 col-sm-8" >
+                        Java, JFlex, Cup
                     </div>
-                    <div class="small-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Ruby on
-                                Rails
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">Spring
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
-                                AngularJS
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">.NET
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">OpenCV
-                            </div>
-                        </div>
+                    <div class="col-md-2 col-sm-2">
+                        <a href="https://github.com/KarthickMahalingam/Compiler-Design-project" target="_blank"><i
+                            class="fi-social-github large" style="font-size: 4vh"></i></a>&nbsp;&nbsp;
                     </div>
                 </div>
             </div>
+        </div>
+        <br/><br/>
+        <div class="container border">
+            <div class="section-title">
+                <h2 style="text-align: center"><i class="glyphicon glyphicon-pencil"></i>TESTIMONIAL </h2>
+            </div>
+            <br/><br/>
+            <div class="bk-testimony">
+            <div class="testimonial-section col-md-12 col-sm-12">
 
-            <div class="skillset col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-sm-2 skill-title">Cloud</div>
-                <div class="col-md-10 col-sm-10">
-                    <div class="big-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">Heroku
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="d-block col-md-12">I had the pleasure of managing Karthick while
+                                he was a software engineering intern at Duco. His eagerness to learn shined through
+                                as he rapidly absorbed new technologies and software design patterns. Day one on the job
+                                was his first time working in ruby, and by the time he left he was building full stack features
+                                with tests to back it up. Karthick took feedback very well, we use pull requests in our development
+                                workflow and I never had to make the same comment twice. Karthick showed up on time every day with a
+                                positive attitude ready to ship code. He was productive both in an on-site and remote capacity.
+                                <hr/>
+                                <div class="text-center">Scott Hoch, Lead Engineer, Duco Adivisors Inc.</div>
                             </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:40%">Amazon
-                                EC2
-                            </div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:30%">
-                                Google App Engine
+                        </div>
+                        <div class="item">
+                            <div class="d-block col-md-12">
+                                Karthick joined Accenture fresh out of school and has turned out to be most reliable amongst our team.
+                                I count on him to do the most complex work and he has done it really well even though his team mates are more experienced
+                                than him. I treat him as the most senior resource. He is and will remain a great asset to our team during the coming
+                                years. It is enough for me to give him just a direction and he is able to run with it and deliver it and (in my general experience)
+                                He has learned a lot technically in terms of SQL, PL/SQL, shell scripting etc.
+                                <hr/>
+                                <div class="text-center">Rajesh Swamy, Manager, Accenture</div>
                             </div>
                         </div>
                     </div>
-                    <div class="small-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Heroku
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">Amazon
-                                EC2
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
-                                Google App Engine
-                            </div>
-                        </div>
-                    </div>
+                    <a class="left carousel-control" href="#carouselExampleIndicators" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselExampleIndicators" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-
-            <div class="skillset col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-sm-2 skill-title">Testing</div>
-                <div class="col-md-10 col-sm-10">
-                    <div class="big-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:30%">Rspec
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">
-                                FactoryGirl
-                            </div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-                                Protractor
-                            </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 25%">JUnit
-                            </div>
-                        </div>
-                    </div>
-                    <div class="small-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">Rspec
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">
-                                FactoryGirl
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:80%">
-                                Protractor
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">JUnit
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skillset col-md-12 col-sm-12 col-xs-12">
-                <div class="col-md-2 col-sm-2 skill-title">API & Other</div>
-                <div class="col-md-10 col-sm-10">
-                    <div class="big-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:13%">
-                                OpenGraph
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:10%">LinkedIn
-                            </div>
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-                                Facebook
-                            </div>
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 11%">Sidekiq
-                            </div>
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 10%">GitHub
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width: 10%">Stripe
-                            </div>
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 10%">Twilio
-                            </div>
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width: 21%">Oracle ERP
-                            </div>
-                        </div>
-                    </div>
-                    <div class="small-screen-only">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">
-                                OpenGraph
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:80%">LinkedIn
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
-                                Facebook
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">Sidekiq
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:100%">GitHub
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" style="width:100%">Stripe
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:100%">Twilio
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:100%">Oracle
-                                ERP
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -564,7 +838,7 @@
     };
     ga.q = [];
     ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('create', 'UA-110940398-1', 'auto');
     ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
