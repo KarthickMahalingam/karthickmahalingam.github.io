@@ -21,7 +21,7 @@ body, html {
     margin-top: 2%;
     margin-bottom: 2%;
     z-index: 1;
-    background: lightskyblue;
+    background: #35acdf;
     margin: -290px 3px 0 0;
     overflow: hidden;
     animation: 1s fadeIn;
@@ -273,7 +273,7 @@ li{
         width: 100%;
         height: 200%;
         z-index: 1;
-        background: lightskyblue;
+        background: #35acdf;
         margin: -290px 3px 0 0;
         overflow: hidden;
     }
@@ -330,7 +330,7 @@ li{
         width: 100%;
         height: 400px;
         z-index: 1;
-        background: lightskyblue;
+        background: #35acdf;
         margin: -290px 3px 0 0;
         overflow: hidden;
 
