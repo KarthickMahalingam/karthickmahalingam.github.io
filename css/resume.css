@@ -224,6 +224,7 @@ li{
 
 #carouselExampleIndicators{
     top: 30%
+    height: 300px;
 }
 
 .carousel-indicators{
@@ -391,7 +392,7 @@ li{
     }
 
     #carouselExampleIndicators{
-        top: 5%
+        top: 2%
     }
 
 

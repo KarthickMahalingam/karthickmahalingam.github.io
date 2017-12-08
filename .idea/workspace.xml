@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e7ebaa3-958b-4d97-b0ee-e73a702ebe38" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/navbar.css" afterPath="$PROJECT_DIR$/css/navbar.css" />
       <change beforePath="$PROJECT_DIR$/css/resume.css" afterPath="$PROJECT_DIR$/css/resume.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="94">
@@ -163,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resume.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="resume.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/resume.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="327" column="18" lean-forward="false" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="18" />
+            <state relative-caret-position="271">
+              <caret line="394" column="14" lean-forward="false" selection-start-line="394" selection-start-column="14" selection-end-line="394" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -208,9 +205,9 @@
         <option value="$PROJECT_DIR$/css/large_devices.css" />
         <option value="$PROJECT_DIR$/js/navbar.js" />
         <option value="$PROJECT_DIR$/css/timeline.css" />
-        <option value="$PROJECT_DIR$/css/resume.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/navbar.css" />
+        <option value="$PROJECT_DIR$/css/resume.css" />
       </list>
     </option>
   </component>
@@ -341,12 +338,12 @@
       <workItem from="1512584963584" duration="1811000" />
       <workItem from="1512669712701" duration="30065000" />
       <workItem from="1512712309848" duration="14614000" />
-      <workItem from="1512754407244" duration="1139000" />
+      <workItem from="1512754407244" duration="1902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99470000" />
+    <option name="totallyTimeSpent" value="100233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -2554,14 +2551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/resume.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="327" column="18" lean-forward="false" selection-start-line="327" selection-start-column="5" selection-end-line="327" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -2682,6 +2671,14 @@
             <marker date="1512755487139" expanded="true" signature="3426:3593" ph="..." />
             <marker date="1512755487139" expanded="true" signature="3520:3548" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/resume.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="394" column="14" lean-forward="false" selection-start-line="394" selection-start-column="14" selection-end-line="394" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
