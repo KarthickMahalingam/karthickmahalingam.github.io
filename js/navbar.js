@@ -7,6 +7,17 @@ $(document).ready(function () {
         hamburger_cross();
     });
 
+    $(document).ready( function() {
+        $(window).on('resize', function () {
+            var ww = document.body.clientWidth;
+            if (ww < 480) {
+                isClosed = true
+                hamburger_cross();
+                $('#wrapper').removeClass('toggled');
+            }
+        })
+    });
+
     function hamburger_cross() {
 
         if (isClosed == true) {
